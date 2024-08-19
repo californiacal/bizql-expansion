@@ -1,40 +1,23 @@
-const products = [];
-
-module.exports = {
-    Query: {},
-    Mutation: {}
-};
+let products = [];
 
 const getProducts = () => {
-    // returns products as an array
-    return Promise.resolve(products);
-}
-module.exports = {
-    Query: {
-        prodcuts: async () => getProducts
-    },
-    Mutation: {}
+    return products;
 };
 
 const getProductById = ({ productId }) => {
-    return Promise.resolve(products.find(p => p.id === productId));
-}
-module.exports = {
-    Query: {
-        products: async () => getProducts,
-        product: async (_, { id }) => getProductById({ productId: id })
-    },
-    Mutation: {}
+    return products.find(p => p.id === productId);
 };
 
 const createProduct = ({ product }) => {
     const newId = products.length === 0 ? 1 : products[products.length - 1].id + 1;
-    products = [...products, { ...product, id: newId }];
-    return Promise.resolve('success');
-}
+    const newProduct = { ...product, id: newId };
+    products.push(newProduct); 
+    return newProduct; 
+};
+
 module.exports = {
     Query: {
-        products: async () => getProducts,
+        products: async () => getProducts(),
         product: async (_, { id }) => getProductById({ productId: id })
     },
     Mutation: {

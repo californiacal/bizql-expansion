@@ -5,18 +5,21 @@ const typeDefs = gql`
     products: [Product]
     product(id: Int!): Product
   }
+  
   type Product {
-    id: Int,
-    name: String,
+    id: Int
+    name: String
     description: String
   }
+  
   input ProductInput {
-    name: String,
+    name: String
     description: String
   }
+  
   type Mutation {
     login(email: String): String # token
-    createProduct(product: ProductInput)
+    createProduct(product: ProductInput): Product
   }
 `
 

@@ -1,0 +1,37 @@
+// const { ApolloServer } = require('apollo-server');
+// const typeDefs = require('./schema');
+// const resolvers = require('./resolvers');
+// const sql = require('mssql');
+
+// const server = new ApolloServer({
+//     typeDefs,
+//     resolvers,
+// });
+
+// const config = {
+//   server: 'SQLEXPRESS',
+//   database: 'SalesPortaldb',
+//   options: {
+//       encrypt: true,  // Enable encryption if needed
+//       trustServerCertificate: true,  // Trust the server certificate
+//   },
+//   authentication: {
+//       type: 'default',
+//       options: {
+//           userName: 'DESKTOP-29OLCGH\Sam',  // Replace with your SQL Server username
+//           password: 'BLACKtide11!'   // Replace with your SQL Server password
+//       }
+//   }
+// };
+
+// sql.connect(config).then(pool => {
+//   if (pool.connected) {
+//       console.log('Connected to SQL Server!');
+//   }
+// }).catch(err => {
+//   console.error('Connection failed:', err);
+// });
+
+// server.listen().then(({ url }) => {
+//     console.log(`Server ready at ${url}`);
+// });

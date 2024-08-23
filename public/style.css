@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f5f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Container for the content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff3e3;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered Heading Styles */
+h1 {
+    color: #d35400;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Centered Input Styles */
+input[type="text"],
+input[type="number"] {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto 15px auto; /* Centered with auto margin */
+    display: block; /* Ensure input is block-level to center */
+    border: 1px solid #e67e22;
+    border-radius: 4px;
+    background-color: #fffaec;
+    color: #5a5a5a;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #d35400;
+    outline: none;
+    box-shadow: 0 0 5px rgba(211, 84, 0, 0.5);
+}
+
+/* Button Styles */
+button {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #d35400;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 auto; /* Centered */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Label Styles */
+label {
+    display: block; /* Make label block-level for proper centering */
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto 5px auto; /* Center label and add spacing */
+    text-align: center; /* Center text inside the label */
+    font-size: 1em;
+    color: #8e44ad;
+}
+
+/* List Styles */
+#itemsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+#itemsList li {
+    background-color: #fff8e1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Set a maximum width for the item boxes */
+    width: 100%; /* Full width up to the max-width */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+#itemsList li:hover {
+    background-color: #f7d9c4;
+    transform: scale(1.02);
+}
+
+/* Flex container for item details */
+.item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+.item-details span {
+    font-size: 0.9em;
+    color: #8e44ad;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #d35400;
+    font-size: 1.2em;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    #itemsList li {
+        padding: 12px;
+        font-size: 0.9em;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        padding: 6px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    #itemsList li {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+}

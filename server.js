@@ -1,5 +1,6 @@
 const { ApolloServer, gql } = require('apollo-server-express');
 const express = require('express');
+const path = require('path');
 const sql = require('mssql');
 
 // Define your GraphQL schema
@@ -65,6 +66,9 @@ const resolvers = {
 // Start the Apollo Server
 const startServer = async () => {
   const app = express();
+
+  app.use(express.static(path.join(__dirname, 'public')));
+
   const server = new ApolloServer({ typeDefs, resolvers });
   await server.start();
   server.applyMiddleware({ app });

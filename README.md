@@ -44,8 +44,8 @@ see below for graphql studio example:
 ![alt text]([https://github.com/caldallas/bizql/graphql.png))
 ![alt text]([https://github.com/caldallas/bizql/front-end.png])
 
-![alt text](./graphql.png?raw=true)
-![alt text](./front-end?raw=true)
+![alt text](./public/assets/graphql.png?raw=true)
+![alt text](./public/assets/front-end?raw=true)
 
 ## Contributing
 

@@ -40,7 +40,7 @@ The apollo api provides you with apollo studio in which you can play around with
 see below for graphql studio example:
 
 ![alt text](./public/assets/graphql.png?raw=true)
-![alt text](./public/assets/front-end?raw=true)
+![alt text](./public/assets/front-end.png?raw=true)
 
 ## Contributing
 

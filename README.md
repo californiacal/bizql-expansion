@@ -39,7 +39,7 @@ The apollo api provides you with apollo studio in which you can play around with
 
 see below for graphql studio example:
 ![example-query](public\assets\graphql.png)
-
+![front-end](public\assets\front-end.png)
 
 ## Contributing
 

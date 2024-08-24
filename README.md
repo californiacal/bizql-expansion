@@ -41,6 +41,9 @@ see below for graphql studio example:
 ![example-query](./public/assets/graphql.png)
 ![front-end](./public/assets/front-end.png)
 
+![alt text]([https://github.com/caldallas/bizql/graphql.png))
+![alt text]([https://github.com/caldallas/bizql/front-end.png])
+
 ## Contributing
 
 Best thing to contribute would be to take a crack at the mutations, though remember to use the correct data types and naming conventions to properly update the database. 

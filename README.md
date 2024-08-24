@@ -38,8 +38,8 @@ The front end features a very straight forward set of two inputs, one for the it
 The apollo api provides you with apollo studio in which you can play around with the different queries that are set up in the schema, if one were to update this for future use; there are files in the "update" directory that contain some possible mutations that could be used to update the database. This is strictly for demonstration purposes and should not be used in a production environment.
 
 see below for graphql studio example:
-![example-query](./public\assets\graphql.png)
-![front-end](./public/assets\front-end.png)
+![example-query](./public/assets/graphql.png)
+![front-end](./public/assets/front-end.png)
 
 ## Contributing
 
